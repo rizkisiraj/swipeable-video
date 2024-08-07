@@ -31,11 +31,17 @@ The main view of the application. It uses a `ScrollView` to display a list of vi
 #### Gestures:
 - **DragGesture**: Detects user interaction with the screen, enhancing the scrolling experience similar to TikTok, ensuring users can't skip more than one video per scroll. However, it has drawbacks due to SwiftUI's ScrollView potentially interfering with the drag gesture.
 
-## Usage
+#### Usage:
 1. **Preload Videos**: On appear, preload the first three videos and start playing the first video.
 2. **Scroll Detection**: Use `scrollStatusMonitor` and `scrollPosition` to track scrolling.
-3. **Gesture Handling**: Use `DragGesture` to detect user interaction and update scrolling state.
+3. **Gesture Handling**: Use `DragGesture` to detect user interaction and update the scrolling state.
 
+## Observer Usage
+An observer is used to determine if a video is ready to play before preloading. This observer can cause memory leaks, so it's essential to clean the observer whenever the video moves to prevent memory issues.
+
+## For Future Improvement
+- The drag gesture tends to interfere with ScrollView in SwiftUI, resulting in the ScrollView not scrolling. A different method to observe if the user is touching the screen needs to be found.
+- The observer used to check if the video is ready to play before preloading can lead to memory leaks. A workaround involves cleaning the observer whenever the video is moved.
 
 ## Example Code
 ```swift
@@ -109,8 +115,3 @@ struct ContentView: View {
     }
 }
 ```
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-For more details, visit the [GitHub repository](https://github.com/rizkisiraj/swipeable-video).
