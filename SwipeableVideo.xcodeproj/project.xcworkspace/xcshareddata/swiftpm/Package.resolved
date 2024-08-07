@@ -1,0 +1,15 @@
+{
+  "originHash" : "13619c95a360a44315c0cb9d7300db378dd88572c0eac1d083376fa6e95aa702",
+  "pins" : [
+    {
+      "identity" : "isscrolling",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fatbobman/IsScrolling",
+      "state" : {
+        "revision" : "7def8d8f789a326b6f725a76cee8ec3fa69511df",
+        "version" : "1.1.2"
+      }
+    }
+  ],
+  "version" : 3
+}

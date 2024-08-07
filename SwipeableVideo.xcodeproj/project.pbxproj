@@ -14,6 +14,12 @@
 		7ED149072C61FD290026A2CE /* SwipeableVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED149062C61FD290026A2CE /* SwipeableVideoTests.swift */; };
 		7ED149112C61FD290026A2CE /* SwipeableVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED149102C61FD290026A2CE /* SwipeableVideoUITests.swift */; };
 		7ED149132C61FD290026A2CE /* SwipeableVideoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED149122C61FD290026A2CE /* SwipeableVideoUITestsLaunchTests.swift */; };
+		7ED149222C6203150026A2CE /* VideoPlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED149212C6203150026A2CE /* VideoPlayerCard.swift */; };
+		7ED149252C6209CD0026A2CE /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED149242C6209CD0026A2CE /* Video.swift */; };
+		7ED149282C620DBD0026A2CE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED149272C620DBD0026A2CE /* ViewModel.swift */; };
+		7EEB356D2C63218E006A4E3D /* ScrollViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEB356C2C63218E006A4E3D /* ScrollViewModifier.swift */; };
+		7EEB35702C635539006A4E3D /* IsScrolling in Frameworks */ = {isa = PBXBuildFile; productRef = 7EEB356F2C635539006A4E3D /* IsScrolling */; };
+		7EEB35722C635586006A4E3D /* IsScrolling in Frameworks */ = {isa = PBXBuildFile; productRef = 7EEB35712C635586006A4E3D /* IsScrolling */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,10 @@
 		7ED1490C2C61FD290026A2CE /* SwipeableVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeableVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED149102C61FD290026A2CE /* SwipeableVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableVideoUITests.swift; sourceTree = "<group>"; };
 		7ED149122C61FD290026A2CE /* SwipeableVideoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableVideoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7ED149212C6203150026A2CE /* VideoPlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerCard.swift; sourceTree = "<group>"; };
+		7ED149242C6209CD0026A2CE /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		7ED149272C620DBD0026A2CE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7EEB356C2C63218E006A4E3D /* ScrollViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEB35702C635539006A4E3D /* IsScrolling in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEB35722C635586006A4E3D /* IsScrolling in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +106,10 @@
 		7ED148F42C61FD270026A2CE /* SwipeableVideo */ = {
 			isa = PBXGroup;
 			children = (
+				7EEB356B2C63217C006A4E3D /* Utilities */,
+				7ED149262C620D9F0026A2CE /* ViewModels */,
+				7ED149232C6209B30026A2CE /* Models */,
+				7ED1491F2C6202E70026A2CE /* Views */,
 				7ED148F52C61FD270026A2CE /* SwipeableVideoApp.swift */,
 				7ED148F72C61FD270026A2CE /* ContentView.swift */,
 				7ED148F92C61FD290026A2CE /* Assets.xcassets */,
@@ -127,6 +143,46 @@
 			path = SwipeableVideoUITests;
 			sourceTree = "<group>";
 		};
+		7ED1491F2C6202E70026A2CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7ED149202C6202FE0026A2CE /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7ED149202C6202FE0026A2CE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7ED149212C6203150026A2CE /* VideoPlayerCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7ED149232C6209B30026A2CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7ED149242C6209CD0026A2CE /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7ED149262C620D9F0026A2CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7ED149272C620DBD0026A2CE /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7EEB356B2C63217C006A4E3D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7EEB356C2C63218E006A4E3D /* ScrollViewModifier.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +199,9 @@
 			dependencies = (
 			);
 			name = SwipeableVideo;
+			packageProductDependencies = (
+				7EEB356F2C635539006A4E3D /* IsScrolling */,
+			);
 			productName = SwipeableVideo;
 			productReference = 7ED148F22C61FD270026A2CE /* SwipeableVideo.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +220,9 @@
 				7ED149042C61FD290026A2CE /* PBXTargetDependency */,
 			);
 			name = SwipeableVideoTests;
+			packageProductDependencies = (
+				7EEB35712C635586006A4E3D /* IsScrolling */,
+			);
 			productName = SwipeableVideoTests;
 			productReference = 7ED149022C61FD290026A2CE /* SwipeableVideoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -215,6 +277,9 @@
 				Base,
 			);
 			mainGroup = 7ED148E92C61FD270026A2CE;
+			packageReferences = (
+				7EEB356E2C6353DC006A4E3D /* XCRemoteSwiftPackageReference "IsScrolling" */,
+			);
 			productRefGroup = 7ED148F32C61FD270026A2CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEB356D2C63218E006A4E3D /* ScrollViewModifier.swift in Sources */,
+				7ED149282C620DBD0026A2CE /* ViewModel.swift in Sources */,
 				7ED148F82C61FD270026A2CE /* ContentView.swift in Sources */,
+				7ED149252C6209CD0026A2CE /* Video.swift in Sources */,
 				7ED148F62C61FD270026A2CE /* SwipeableVideoApp.swift in Sources */,
+				7ED149222C6203150026A2CE /* VideoPlayerCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +657,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EEB356E2C6353DC006A4E3D /* XCRemoteSwiftPackageReference "IsScrolling" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fatbobman/IsScrolling";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EEB356F2C635539006A4E3D /* IsScrolling */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EEB356E2C6353DC006A4E3D /* XCRemoteSwiftPackageReference "IsScrolling" */;
+			productName = IsScrolling;
+		};
+		7EEB35712C635586006A4E3D /* IsScrolling */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EEB356E2C6353DC006A4E3D /* XCRemoteSwiftPackageReference "IsScrolling" */;
+			productName = IsScrolling;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7ED148EA2C61FD270026A2CE /* Project object */;
 }
